@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+<div>
+    <a href="/">Home</a>
+    <a href="/portfolio/profile">Profile</a>
+    <a href="/portfolio/education">Education</a>
+    <a href="/portfolio/projects">Projects</a>
+    <a href="/portfolio/references">References</a>
+
+</div>
+<h2>Projects</h2>
+<table class="table table-bordered" >
+    <tr>
+        <th>Course</th>
+        <th>Descprition</th>
+    </tr>
+    @foreach (var item in Model) { 
+        <tr>
+            <td>@item.Course</td>   
+            <td>@item.Description</td>   
+        </tr>
+    }
+</table>
+
