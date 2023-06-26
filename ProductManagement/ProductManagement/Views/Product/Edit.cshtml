@@ -1,0 +1,16 @@
+﻿@model ProductManagement.Models.ProductDTO
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_OuterLayout.cshtml";
+}
+
+<h2>Edit</h2>
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <input type="text" name="Name" value="@Model.Name" class="form-control" />
+    <input type="text" name="Price" value="@Model.Price" class="form-control" />
+    <input type="text" name="Qty" value="@Model.Qty" class="form-control" />
+    <input type="text" name="Description" value="@Model.Description" class="form-control" />
+    <input type="submit" value="Update" class="btn btn-primary" />
+</form>
+

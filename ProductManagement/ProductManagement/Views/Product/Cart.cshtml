@@ -1,0 +1,35 @@
+﻿@model List<ProductManagement.Models.ProductDTO>
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_OuterLayout.cshtml";
+}
+
+@{
+    double total = 0;
+}
+
+<h2>Cart</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Qty</th>
+    </tr>
+    @foreach (var item in Model) {
+        total += item.Price * item.Qty;
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@item.Qty</td>
+        </tr>
+    }
+    <tr>
+        <th colspan="2" align="right">Total</th>
+        <th>@total</th>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td ><a class="btn btn-danger" href="/Product/Checkout"><h2>Check Out</h2></a></td>
+    </tr>
+</table>
+
