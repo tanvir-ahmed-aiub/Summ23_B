@@ -14,5 +14,6 @@ namespace DAL.Intefaces
         RET Create(CLASS obj);
         RET Update(CLASS obj);
         bool Delete(ID id);
+        
     }
 }

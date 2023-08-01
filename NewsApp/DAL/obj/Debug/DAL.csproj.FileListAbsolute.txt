@@ -13,3 +13,4 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\DAL\obj\Debug\DAL.pdb
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\DAL\obj\Debug\DAL.Migrations.InitDB.resources
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\DAL\obj\Debug\DAL.Migrations.InitDB2.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\DAL\obj\Debug\DAL.Migrations.UserAndTokenAdded.resources

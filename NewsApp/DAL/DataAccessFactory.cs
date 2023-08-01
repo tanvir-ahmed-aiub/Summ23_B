@@ -17,5 +17,14 @@ namespace DAL
         public static IRepo<Category, int, bool> CategorysData() { 
             return new CategoryRepo();
         }
+        public static IRepo<User, string, bool> UserData() { 
+            return new UserRepo();
+        }
+        public static IAuth AuthData() {
+            return new UserRepo();
+        }
+        public static IRepo<Token, int, Token> TokensData() { 
+            return new TokenRepo();
+        }
     }
 }

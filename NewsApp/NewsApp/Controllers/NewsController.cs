@@ -1,4 +1,5 @@
 ﻿using BLL.Services;
+using NewsApp.AuthFilters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace NewsApp.Controllers
 {
     public class NewsController : ApiController
     {
+        [Logged]
         [HttpGet]
         [Route("api/news/all")]
         public HttpResponseMessage Get()
