@@ -76,3 +76,6 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\NewsApp\obj\Debug\NewsApp.csproj.Co
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\NewsApp\obj\Debug\NewsApp.csproj.CopyComplete
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\NewsApp\obj\Debug\NewsApp.dll
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\NewsApp\obj\Debug\NewsApp.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\NewsApp\bin\System.Web.Cors.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\NewsApp\bin\System.Web.Http.Cors.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\NewsApp\NewsApp\bin\System.Web.Http.Cors.xml

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace NewsApp.Controllers
 {
@@ -38,6 +39,7 @@ namespace NewsApp.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
             }
         }
+        [EnableCors("*","*","*")]
         [HttpGet]
         [Route("api/news/cat/{cat}")]
         public HttpResponseMessage Get(string cat)

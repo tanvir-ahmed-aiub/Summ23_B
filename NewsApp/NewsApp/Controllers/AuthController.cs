@@ -23,7 +23,7 @@ namespace NewsApp.Controllers
                 return Request.CreateResponse(HttpStatusCode.NotFound,new { Msg="User not found"});
             }
             
-            return null;
+            
         }
     }
 }

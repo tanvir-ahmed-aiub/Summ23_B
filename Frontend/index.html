@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script>
+			function Load(){
+				var xhr = new XMLHttpRequest();
+				xhr.onreadystatechange=function(){
+					if(this.readyState == 4 && this.status==200){
+						var data = this.responseText;
+						var arr = JSON.parse(data);
+						document.getElementById("title").innerHTML = arr[0].Title;
+						
+						
+					}
+				};
+				xhr.open("get","https://localhost:44302/api/news/cat/sports",true);
+				xhr.send();
+			}
+		</script>
+	</head>
+	<body>
+		<p id="title"></p>
+		<button onclick="Load()">Load</button>
+	</body>
+</html>

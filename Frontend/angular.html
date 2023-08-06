@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script>
+			var app = angular.module("my-app",[]);
+			app.controller("frst-ctrl",function($scope){
+				$scope.name="Tanvir Ahmed";
+			});
+			
+		</script>
+	</head>
+	<body ng-app="my-app">
+		<input type="text" ng-model="name"> </br>
+		<p>{{name}}</p>
+		<p>{{5*6}}</p>
+		<p ng-bind="name"></p>
+		
+		<div ng-controller="frst-ctrl">
+			<p>My name is {{name}}</p>
+		</div>
+		
+		<div>
+			<p>My name is {{name}}</p>
+		</div>
+	</body>
+</html>
