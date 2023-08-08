@@ -5,11 +5,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace NewsApp.Controllers
 {
+    [EnableCors("*", "*", "*")]
     public class CategoryController : ApiController
     {
+        
         [HttpGet]
         [Route("api/cat/all")]
         public HttpResponseMessage Get() {
@@ -23,6 +26,7 @@ namespace NewsApp.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
             }
         }
+        
         [HttpGet]
         [Route("api/cat/{id}")]
         public HttpResponseMessage Get(int id)

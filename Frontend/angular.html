@@ -7,6 +7,31 @@
 				$scope.name="Tanvir Ahmed";
 			});
 			
+			app.controller("cat-ctrl",function($scope,$http){
+				$http.get("https://localhost:44302/api/cat/1").then(function(resp){
+					$scope.c = resp.data;
+				},function(err){
+				
+				});
+			});
+			
+			app.controller("login-ctrl",function($scope,$http){
+				
+				$scope.login = function(){
+					var user = {
+									Username:$scope.uname,
+									Password:$scope.pass
+							   };
+					$http.post("https://localhost:44302/api/login",user).then(function(resp){
+						debugger;
+						
+					},
+					function(err){
+						$scope.msg = err.data.Msg;
+					});
+				};
+			});
+			
 		</script>
 	</head>
 	<body ng-app="my-app">
@@ -22,5 +47,19 @@
 		<div>
 			<p>My name is {{name}}</p>
 		</div>
+		<div ng-controller="cat-ctrl">
+			<h1>Category Id : {{c.Id}}</h1>
+			<h1>Category Name : {{c.Name}}</h1>
+		</div>
+		
+		<div ng-controller="login-ctrl">
+			<form ng-submit="login()">
+				<input type="text" ng-model="uname"> <br>
+				<input type="password" ng-model="pass"> <br>
+				<input type="submit">
+			</form>
+			<p>{{msg}}</p>
+		</div>
+		
 	</body>
 </html>

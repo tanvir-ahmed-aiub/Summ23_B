@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{850E3EFB-B53D-4BA8-ADD5-0E8713AD1808}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsConsole", "NewsConsole\NewsConsole.csproj", "{6AACAF98-64C0-4A17-92BC-1F05F05234C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMVC", "NewMVC\NewMVC.csproj", "{E19B6612-C827-4094-9C6A-BF4CB37A5211}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{850E3EFB-B53D-4BA8-ADD5-0E8713AD1808}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{850E3EFB-B53D-4BA8-ADD5-0E8713AD1808}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{850E3EFB-B53D-4BA8-ADD5-0E8713AD1808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AACAF98-64C0-4A17-92BC-1F05F05234C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AACAF98-64C0-4A17-92BC-1F05F05234C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AACAF98-64C0-4A17-92BC-1F05F05234C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AACAF98-64C0-4A17-92BC-1F05F05234C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E19B6612-C827-4094-9C6A-BF4CB37A5211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E19B6612-C827-4094-9C6A-BF4CB37A5211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E19B6612-C827-4094-9C6A-BF4CB37A5211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E19B6612-C827-4094-9C6A-BF4CB37A5211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
